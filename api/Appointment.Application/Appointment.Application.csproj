@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AWSSDK.CognitoIdentityProvider" Version="3.7.1.57" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.2.3" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.52.0" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="5.0.7" />
+    <PackageReference Include="Telegram.Bot" Version="16.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Appointment.Domain\Appointment.Domain.csproj" />
+    <ProjectReference Include="..\Appointment.Infrastructure\Appointment.Infrastructure.csproj" />
+    <ProjectReference Include="..\Appointment.Persistence\Appointment.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Appointment.AWS.Application">
+      <HintPath>..\Appointment.AWS.Application\bin\Debug\net5.0\ref\Appointment.AWS.Application.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

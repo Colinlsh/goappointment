@@ -1,0 +1,242 @@
+.navigation {
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  font-size: 1.4rem;
+  background-color: #fff;
+  padding: 0 35rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 11rem;
+
+  &__side-drawer {
+    display: none;
+    height: 3rem;
+
+    background-color: blue;
+    overflow: hidden;
+
+    @include respond(tab-port) {
+      display: block;
+      visibility: visible;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    background-color: $color-white;
+
+    border-radius: 50%;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba($color: $color-black, $alpha: 0.1);
+
+    text-align: center;
+
+    @include respond(tab-port) {
+    }
+  }
+
+  &__icon {
+    height: 2rem;
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2px;
+      background-color: $color-grey-dark-3;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+
+    &::before {
+      top: -0.8rem;
+    }
+
+    &::after {
+      top: 0.8rem;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    border-radius: 50%;
+
+    background-image: radial-gradient($color-white, $color-primary);
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
+
+    @include respond(tab-port) {
+      height: 4rem;
+      width: 4rem;
+    }
+
+    @include respond(phone) {
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+
+  &__backgroundOpen {
+    transform: scale(80);
+  }
+
+  &__menu-container {
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    flex: 0 0 30%;
+    align-items: center;
+    justify-content: center;
+    @include respond(tab-port) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  &__logo-container {
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    background-color: transparent;
+    z-index: 4000;
+    padding: 0;
+
+    width: 10rem;
+    height: 2.2rem;
+
+    &:hover,
+    &:focus {
+      animation: none;
+      box-shadow: 0 0 0;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      animation: none;
+      box-shadow: 0 0 0;
+    }
+  }
+
+  &__logo-photo {
+    height: 100%;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    cursor: pointer;
+    &:visited {
+      display: inline-block;
+      font-size: 3rem;
+      font-weight: 300;
+      padding: 1rem 2rem;
+      color: $color-black;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        $color-white 50%
+      );
+      background-size: 220%;
+      transition: all 0.4s;
+
+      span {
+        margin-right: 1.5rem;
+        display: inline-block;
+      }
+    }
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $color-primary;
+      transform: translateX(1rem);
+    }
+  }
+
+  &__bookbutton {
+    border-radius: 4rem;
+    padding: 1.7rem 1.8rem;
+    width: 19rem;
+    height: 6rem;
+    text-transform: none;
+  }
+
+  &__bookbutton-text {
+    letter-spacing: 0%;
+    font-size: 1.7rem;
+    text-align: center;
+    color: $color-text-primary;
+    font-weight: 700;
+  }
+
+  &__otherbutton {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    transform: scale(1);
+    transition: all 0.5s;
+    margin: 0 4rem 0 0;
+    &:hover {
+      transform: scale(1.1);
+      animation: none;
+      box-shadow: 0 0 0;
+    }
+  }
+
+  &__otherbutton-text {
+    text-align: center;
+    color: $color-text-primary;
+  }
+
+  &__icon {
+  }
+
+  &__findmehere {
+    animation: shake 1s ease infinite;
+    display: flex;
+    background-color: transparent;
+    z-index: 4000;
+    padding: 0;
+
+    height: 2.2rem;
+
+    &:hover,
+    &:focus {
+      animation: none;
+      box-shadow: 0 0 0;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      animation: none;
+      box-shadow: 0 0 0;
+    }
+  }
+}

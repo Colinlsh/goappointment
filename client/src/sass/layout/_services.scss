@@ -1,0 +1,78 @@
+.services {
+  padding: 11rem 0 0;
+  height: auto;
+  &__overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 35rem 0;
+    margin: 0;
+    margin-bottom: 13.1rem;
+  }
+
+  &__header-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 9rem;
+  }
+
+  &__header {
+    margin-bottom: 0;
+    font-size: 3rem;
+  }
+
+  &__overview-logo-container {
+    display: flex;
+    width: 100%;
+    height: 18rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__overview-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__list {
+  }
+
+  &__list-item {
+    height: 35rem;
+    display: flex;
+    padding: 0 35rem 0;
+    flex-direction: row;
+    flex: 2;
+    background-color: var(--color-primary-light-1);
+    justify-content: space-between;
+  }
+
+  &__list-item-description {
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__list-item-logo {
+    width: 6rem;
+  }
+
+  &__alternate {
+    background-color: white;
+    flex-direction: row-reverse;
+
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+  }
+}

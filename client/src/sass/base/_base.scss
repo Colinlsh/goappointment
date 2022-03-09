@@ -1,0 +1,50 @@
+:root {
+  --color-primary: #c4e0f5;
+  --color-primary-light-1: rgb(137, 203, 233);
+  --color-primary-dark-1: #c4e0f5bb;
+
+  --color-dark-1: #323232;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(black, 0.06);
+
+  --line: 1px solid var(--color-grey-light-2);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /*1rem definition. 10px is the default. setting percentage will not have reliance on default numbering. 1rem by default is 16px, so to change default to 10px, 10/16 = 62.5%*/
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem = 12, 12/16 = 75%
+  }
+
+  @include respond(desktop) {
+    font-size: 62.5%; // 1rem = 12, 12/16 = 75%
+  }
+
+  @include respond(tab-land) {
+    // width < 900
+    font-size: 56.25%; // 1 rem = 9px, 9/16 = 56.25%
+  }
+
+  @include respond(tab-port) {
+    // width < 600
+    font-size: 50%; // 1 rem = 8px, 8/16 = 50%
+  }
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}

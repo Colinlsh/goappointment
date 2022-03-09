@@ -1,0 +1,60 @@
+.book {
+  height: inherit;
+  padding: 4.7rem 35rem 3.5rem;
+
+  &__group {
+    padding: 1rem;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    border-radius: 1rem;
+    border: 1px solid var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+  }
+
+  &__calendar-form {
+    display: flex;
+  }
+
+  &__calendar-container {
+    flex: 1;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 50rem;
+    padding: 0 1rem 0;
+  }
+
+  &__label {
+    font-size: 1.7rem;
+    width: 100%;
+    padding: 0 1.1rem;
+  }
+
+  &__form-container {
+    flex: 1;
+
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  &__timeslot {
+  }
+
+  &__button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    background-color: var(--color-primary);
+  }
+
+  &__form {
+    margin: 0;
+  }
+}

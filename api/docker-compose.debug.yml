@@ -1,0 +1,27 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP .NET Core service.
+
+version: '3.4'
+
+services:
+  aws.cognito:
+    container_name: go.cognito
+    build:
+      context: .
+      dockerfile: Appointment.API.AWS.Cognito/Dockerfile
+    ports:
+      - 8091:8091
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    volumes:
+      - ~/.vsdbg:/remote_debugger:rw
+  api:
+    container_name: go.api
+    build:
+      context: .
+      dockerfile: Appointment.API/Dockerfile
+    ports:
+      - 8081:8081
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    volumes:
+      - ~/.vsdbg:/remote_debugger:rw
