@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/goappointment/static/css/main.0bf487ea.chunk.css",
-    "main.js": "/goappointment/static/js/main.bfbbcbb4.chunk.js",
-    "main.js.map": "/goappointment/static/js/main.bfbbcbb4.chunk.js.map",
+    "main.js": "/goappointment/static/js/main.6cad91bd.chunk.js",
+    "main.js.map": "/goappointment/static/js/main.6cad91bd.chunk.js.map",
     "runtime-main.js": "/goappointment/static/js/runtime-main.f16aefaa.js",
     "runtime-main.js.map": "/goappointment/static/js/runtime-main.f16aefaa.js.map",
     "static/js/2.cd0748ec.chunk.js": "/goappointment/static/js/2.cd0748ec.chunk.js",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.f16aefaa.js",
     "static/js/2.cd0748ec.chunk.js",
     "static/css/main.0bf487ea.chunk.css",
-    "static/js/main.bfbbcbb4.chunk.js"
+    "static/js/main.6cad91bd.chunk.js"
   ]
 }
