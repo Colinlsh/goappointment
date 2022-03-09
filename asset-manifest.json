@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/goappointment/static/css/main.0bf487ea.chunk.css",
+    "main.js": "/goappointment/static/js/main.bfbbcbb4.chunk.js",
+    "main.js.map": "/goappointment/static/js/main.bfbbcbb4.chunk.js.map",
+    "runtime-main.js": "/goappointment/static/js/runtime-main.f16aefaa.js",
+    "runtime-main.js.map": "/goappointment/static/js/runtime-main.f16aefaa.js.map",
+    "static/js/2.cd0748ec.chunk.js": "/goappointment/static/js/2.cd0748ec.chunk.js",
+    "static/js/2.cd0748ec.chunk.js.map": "/goappointment/static/js/2.cd0748ec.chunk.js.map",
+    "index.html": "/goappointment/index.html",
+    "static/css/main.0bf487ea.chunk.css.map": "/goappointment/static/css/main.0bf487ea.chunk.css.map",
+    "static/js/2.cd0748ec.chunk.js.LICENSE.txt": "/goappointment/static/js/2.cd0748ec.chunk.js.LICENSE.txt",
+    "static/media/colintech-1-nobackground.2f6409b4.svg": "/goappointment/static/media/colintech-1-nobackground.2f6409b4.svg",
+    "static/media/colintech-1-nobackground2.e1f8bfdd.png": "/goappointment/static/media/colintech-1-nobackground2.e1f8bfdd.png",
+    "static/media/facebook1.7e12c433.svg": "/goappointment/static/media/facebook1.7e12c433.svg",
+    "static/media/font.c4521869.svg": "/goappointment/static/media/font.c4521869.svg",
+    "static/media/instagram1.6c4e5d16.svg": "/goappointment/static/media/instagram1.6c4e5d16.svg",
+    "static/media/location2.4c3f669f.svg": "/goappointment/static/media/location2.4c3f669f.svg",
+    "static/media/omega.382006f5.svg": "/goappointment/static/media/omega.382006f5.svg",
+    "static/media/phone.9553808c.svg": "/goappointment/static/media/phone.9553808c.svg",
+    "static/media/sigma.e1b5dceb.svg": "/goappointment/static/media/sigma.e1b5dceb.svg",
+    "static/media/warning.feef77d9.svg": "/goappointment/static/media/warning.feef77d9.svg",
+    "static/media/whatsapp1.6ca0cabb.svg": "/goappointment/static/media/whatsapp1.6ca0cabb.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f16aefaa.js",
+    "static/js/2.cd0748ec.chunk.js",
+    "static/css/main.0bf487ea.chunk.css",
+    "static/js/main.bfbbcbb4.chunk.js"
+  ]
+}
