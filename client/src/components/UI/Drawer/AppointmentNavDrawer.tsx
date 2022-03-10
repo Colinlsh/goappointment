@@ -5,6 +5,8 @@ import logo4 from "../../../assets/colintech/colintech-1-nobackground2.png";
 import { useHistory, useLocation } from "react-router-dom";
 import { locationState } from "../../../app/models";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 
 interface AppointmentNavDrawerProps {
   servicesRef: React.MutableRefObject<HTMLDivElement | null>;
@@ -56,8 +58,10 @@ const AppointmentNavDrawer: FC<AppointmentNavDrawerProps> = ({
           }}
           buttonCSSStyle="navigation__findmehere"
         >
-          <div style={{ alignSelf: "center" }}>COLIN | FIND ME ON LINKEDIN</div>
-          <LinkedInIcon style={{ alignSelf: "center" }} />
+          <div style={{ alignSelf: "center" }}>
+            COLIN | FIND ME ON LINKEDIN
+            <LinkedInIcon style={{ alignSelf: "center", margin: 0 }} />
+          </div>
         </AppointmentButton>
       </div>
 
@@ -114,9 +118,35 @@ const AppointmentNavDrawer: FC<AppointmentNavDrawerProps> = ({
         className="navigation__side-drawer"
         onClick={() => setOpenDrawer(!openDrawer)}
       >
-        <label className="navigation__button">
-          <span className="navigation__icon">&nbsp;</span>
-        </label>
+        {/* <label className="navigation__button"></label> */}
+        <div className="navigation__button">
+          {openDrawer ? (
+            <CloseIcon
+              style={{
+                width: "100%",
+                height: "100%",
+                justifyContent: "center",
+                alignItems: "center",
+                alignSelf: "stretch",
+                borderRadius: "50%",
+              }}
+            />
+          ) : (
+            <MenuIcon
+              style={{
+                width: "100%",
+                height: "100%",
+                justifyContent: "center",
+                alignItems: "center",
+                alignSelf: "stretch",
+                padding: 0,
+                margin: 0,
+                borderRadius: "50%",
+              }}
+            />
+          )}
+        </div>
+
         <div
           className={`navigation__background ${
             openDrawer ? "navigation__backgroundOpen" : ""

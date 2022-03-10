@@ -12,6 +12,20 @@
 
     padding: 2rem 35rem 4rem;
 
+    @include respond(desktop) {
+      padding: 2rem 30rem 4rem;
+    }
+
+    @include respond(tab-land) {
+      // width < 900
+      padding: 2rem 20rem 4rem;
+    }
+
+    @include respond(tab-port) {
+      // width < 600
+      padding: 1rem 5rem 1rem;
+    }
+
     & > :not(:last-child) {
       margin-right: 5rem;
     }

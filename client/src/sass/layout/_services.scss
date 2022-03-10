@@ -9,6 +9,20 @@
     padding: 0 35rem 0;
     margin: 0;
     margin-bottom: 13.1rem;
+
+    @include respond(desktop) {
+      padding: 0 30rem 0;
+    }
+
+    @include respond(tab-land) {
+      // width < 900
+      padding: 0 20rem 0;
+    }
+
+    @include respond(tab-port) {
+      // width < 600
+      padding: 0 10rem 0;
+    }
   }
 
   &__header-container {
@@ -50,6 +64,20 @@
     flex: 2;
     background-color: var(--color-primary-light-1);
     justify-content: space-between;
+
+    @include respond(desktop) {
+      padding: 0 30rem 0;
+    }
+
+    @include respond(tab-land) {
+      // width < 900
+      padding: 0 20rem 0;
+    }
+
+    @include respond(tab-port) {
+      // width < 600
+      padding: 0 10rem 0;
+    }
   }
 
   &__list-item-description {

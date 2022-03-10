@@ -10,9 +10,22 @@
   align-items: flex-end;
   height: 11rem;
 
+  @include respond(desktop) {
+    padding: 0rem 30rem 0rem;
+  }
+
+  @include respond(tab-land) {
+    // width < 900
+    padding: 0rem 10rem 0rem;
+  }
+
+  @include respond(tab-port) {
+    // width < 600
+    padding: 0 5rem 0;
+  }
+
   &__side-drawer {
     display: none;
-    height: 3rem;
 
     background-color: blue;
     overflow: hidden;
@@ -25,16 +38,17 @@
 
   &__button {
     cursor: pointer;
-    background-color: $color-white;
-
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 4rem;
+    right: 5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     z-index: 2000;
-    box-shadow: 0 1rem 3rem rgba($color: $color-black, $alpha: 0.1);
+    // box-shadow: 0 1rem 3rem rgba($color: $color-black, $alpha: 0.1);
 
-    text-align: center;
-
-    @include respond(tab-port) {
-    }
+    // text-align: center;
   }
 
   &__icon {
@@ -42,7 +56,7 @@
     &,
     &::before,
     &::after {
-      width: 3rem;
+      width: 100%;
       height: 2px;
       background-color: $color-grey-dark-3;
       display: inline-block;
@@ -67,6 +81,8 @@
 
   &__background {
     position: absolute;
+    top: 4rem;
+    right: 5rem;
     border-radius: 50%;
 
     background-image: radial-gradient($color-white, $color-primary);
@@ -113,7 +129,7 @@
     z-index: 4000;
     padding: 0;
 
-    width: 10rem;
+    width: auto;
     height: 2.2rem;
 
     &:hover,
@@ -224,6 +240,7 @@
     background-color: transparent;
     z-index: 4000;
     padding: 0;
+    margin-left: 5rem;
 
     height: 2.2rem;
 
@@ -237,6 +254,16 @@
       transform: scale(1.1);
       animation: none;
       box-shadow: 0 0 0;
+    }
+
+    @include respond(tab-land) {
+      // width < 900
+      padding: 5rem;
+    }
+
+    @include respond(tab-port) {
+      // width < 600
+      padding: 5rem;
     }
   }
 }
